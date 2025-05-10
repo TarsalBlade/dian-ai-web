@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/nats');
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-color: #191919;
+  color: #fff;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #121212;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;   
+}
+
+.logo {
+  font-family: 'Nats', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  background: linear-gradient(to right, #00FFFF, #009999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.1rem;
+  line-height: 1;
+}
+
+.logo-subtitle {
+  font-size: 0.5rem;
+  color: #ccc;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00FFFF;
+}
+
+.free-tier {
+  font-weight: 700;
+  color: #00FFFF;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 3rem;
+}
+
+.info-card {
+  background-color: #1d1d1d;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  padding: 2rem;
+  max-width: 900px;
+  width: 100%;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.input-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 1rem 3rem;
+  background-color: #121212;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.7);
+  align-items: center;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 3rem 8rem; /* increased bottom padding to avoid overlap with fixed input bar */
+}
+
+.input-text {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #242424;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.input-text::placeholder {
+  color: #666;
+}
+
+.send-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button svg {
+  width: 24px;
+  height: 24px;
+  fill: #00FFFF;
+  transition: fill 0.3s ease;
+}
+
+.send-button:hover svg {
+  fill: #009999;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem 1.5rem;
+  }
+
+  .info-card {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .input-bar {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .info-card {
+    font-size: 0.9rem;
+  }
+
+  .input-bar {
+    padding: 1rem 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .main-content {
+    padding-bottom: 10rem; /* increased bottom padding for mobile to avoid overlap */
+  }
+
+.input-text {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+
+  .send-button svg {
+    width: 20px;
+    height: 20px;
+  }
+}

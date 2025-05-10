@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DIAN AI Login</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/nats" rel="stylesheet">
+</head>
+<body>
+  <script type="module" src="scripts/firebase-auth.js"></script>
+  <div class="page-container">
+    <h1 class="title">DIAN AI</h1>
+    <p class="subtitle">by Diantech AI Solutions 2025</p>
+    <div class="card">
+      <h2>GETTING STARTED</h2>
+      <div class="in-card">
+        <div class="left-section">
+        <div class="sign-in-section">
+          <p class="section-label">Ways to sign in</p>
+          <button class="btn dark-btn google-btn" onclick="loginWithGoogle()">
+            <img src="/assets/cyan-mail.png" alt="Google" class="icon" />
+            Signin with Google
+          </button>
+        </div>
+        <div class="inquiry-section">
+          <p class="section-label">For Inquiries</p>
+          <button class="btn dark-btn email-btn" onclick="window.location.href='mailto:diantechcoltd@gmail.com'">
+            <img src="/assets/cyan-mail.png" alt="Email" class="icon" />
+            Send us an Email
+          </button>
+        </div>
+      </div>
+      <div class="right-section">
+        <img src="assets/qrcode_diantech.vercel.app.png" alt="Diantech Products QR Code" class="qr-code" />
+        <p class="qr-caption">Scan QR to see more Diantech Products</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
